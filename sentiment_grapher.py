@@ -8,7 +8,7 @@ from functools import reduce
 import ast
 
 
-from fetch_active_adsets import fetch_ads_comments
+#from fetch_active_adsets import fetch_ads_comments
 
 
 
@@ -130,28 +130,28 @@ def update_graph(value):
                 )
     ]))
 
-    for i in range(len(fetch_negative_comments(df, value)[:3])):
-        graphs.append(html.Div(children=[
-            html.P(
-                id="text-area-neg",
-                children=fetch_negative_comments(df,value)[i],
-                style={ 
-                "color":"rgb(178,34,34)"     
-                    },
+    # for i in range(len(fetch_negative_comments(df, value)[:3])):
+    #     graphs.append(html.Div(children=[
+    #         html.P(
+    #             id="text-area-neg",
+    #             children=fetch_negative_comments(df,value)[i],
+    #             style={ 
+    #             "color":"rgb(178,34,34)"     
+    #                 },
 
-            )
-        ]))
-    for i in range(len(fetch_positive_comments(df, value)[:3])):
-            graphs.append(html.Div(children=[
-                html.P(
-                    id="text-area-pos",
-                    children=fetch_positive_comments(df,value)[i],
-                    style={ 
-                    "color":"rgb(107,142,35)"     
-                        },
+    #         )
+    #     ]))
+    # for i in range(len(fetch_positive_comments(df, value)[:3])):
+    #         graphs.append(html.Div(children=[
+    #             html.P(
+    #                 id="text-area-pos",
+    #                 children=fetch_positive_comments(df,value)[i],
+    #                 style={ 
+    #                 "color":"rgb(107,142,35)"     
+    #                     },
 
-                )
-            ]))
+    #             )
+    #         ]))
 
    
     return html.Div(graphs)

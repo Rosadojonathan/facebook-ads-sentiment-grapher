@@ -163,4 +163,4 @@ def fetch_ads_comments(list_of_ad_accounts):
         ad_comments_sentiment_analyzer(accounts_ids[account_iterated])
 
         
-#fetch_ads_comments(['live_booker'])
+fetch_ads_comments(['live_booker'])
