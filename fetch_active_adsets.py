@@ -32,7 +32,7 @@ app_secret = credentials['app_secret']
 access_token = credentials['access_token']
 client_token= credentials['client_token']
 
-FacebookAdsApi.init(app_id=app_id, app_secret=app_secret, access_token=access_token,api_version="v3.0")
+FacebookAdsApi.init(app_id=app_id, app_secret=app_secret, access_token=access_token,api_version="v3.1")
 #account = AdAccount(accounts_ids['live_booker'])
 graph = facebook.GraphAPI(access_token=access_token, version = 3.0)
 
